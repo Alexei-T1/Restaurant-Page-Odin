@@ -4,7 +4,25 @@ html, body {
   height: 100%;
   font-size: 16px;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+.backGroundImage {
+  background-image: url('./assets/326.jpg');
+  background-size: 25%;
+  filter: opacity(20%);
 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -100;
+}
 
 .load {
   position: absolute;
@@ -20,8 +38,21 @@ html, body {
 nav, nav ul, .logoHeader {
   display: flex;
 }
+section, address {
+  padding: 0 12.5em;
+}
+footer {
+  margin: 0 0;
+}
 .mainText {
   font-size: 3em;
+}
+.titleText {
+  font-size: 1.6em;
+}
+.pText {
+  font-size: 1.4em;
+  line-height: 1.5em;
 }
 li {
   marker: none;
@@ -50,8 +81,9 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 0.5em;
-  padding: 1rem 0;
+  padding: 1rem;
+  background-color: black;
+  color: whitesmoke;
 }
 .logoText span {
   margin-bottom: 0.25em;
@@ -69,6 +101,7 @@ li {
   min-width: 50%;
 }
 .navHeader > ul {
+background-color: wheat;
 padding: 1.5em;
 border: 1em solid rgba(247, 247, 172, 0.842);
 }
@@ -87,4 +120,117 @@ nav ul > li {
   text-decoration: none;
   color:blue;
   transition: 0.5s;
+}
+
+/* main-start Page */
+
+.welcomeSection {
+ margin-top: 1em;
+}
+
+p {
+  padding: 0 1em;
+}
+
+.paragraph {
+  background-image: linear-gradient(180deg, wheat -57%, rgba(245, 222, 179, 0.678));
+  padding-top: 1em;
+  text-align: justify;
+  text-indent: 1.5em;
+}
+.paragraphGreet {
+  text-indent: 0;
+  padding-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraphGreet span:last-child {
+  /* text-align: right; */
+}
+.paragraphGreet .textGreet {
+  margin-bottom: 1em;
+  padding-left: 0.8em;
+}
+.paragraphEnd {
+  background-image: none;
+  background-color: wheat;
+  margin-top: 1em;
+  text-align: center;
+}
+
+/* Contacts page */
+.contactSection, .timeSection, .wishSection {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: rgba(247, 247, 172, 0.842);
+}
+
+.contactSection {
+  margin-top: 4em;
+}
+.contactSection li {
+  margin-top: 1em;
+  cursor: pointer;
+}
+.timeSection, .wishSection {
+  margin: 2em 0 0 0;
+}
+.timeSection li {
+  margin-top: 1em;
+}
+.wishSection {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Footer */
+.footerClass {
+  margin-top: 2em;
+  padding: 0.25em 1em;
+  background-color: rgba(24, 24, 24, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meContacts {
+  padding: 0.25em 0em;
+  display: flex;
+  align-items: center;
+}
+
+.imageClass, .imageClass img {
+  width: 2.5em;
+  height: 2.5em;
+  fill: wheat;
+  transition: 0.5s;
+}
+.imageClass:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.textClass {
+  padding: 0em;
+  margin-left: 0.8em;
+  color: #f5deb3;
+  font-size: 1.2em;
+}
+.textT {
+  margin-right: 0.25em;
+  padding: 0 0.25em;
+  font-size: 1.5em;
+  border-radius: 100%;
+  border: 1px solid white;
+  transition: 1s;
+}
+.textT:hover {
+ filter: invert(75%);
+ cursor: pointer;
+ transform: rotateZ(90deg);
+}
+.footerClass a:last-child{
+  margin-left: 5em;
 }

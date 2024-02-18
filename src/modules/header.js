@@ -39,21 +39,21 @@ nav.append(ul);
 
 const mainWrap = document.createElement('li');
 mainWrap.classList.add(navTextClass);
-const textMain = document.createElement('a');
+export const textMain = document.createElement('a');
 textMain.classList.add(navWelcomeClass);
 textMain.innerText = "Welcome";
 mainWrap.append(textMain);
 
 const describeWrap = document.createElement('li');
 describeWrap.classList.add(navTextClass);
-const textDescribe = document.createElement('a');
+export const textDescribe = document.createElement('a');
 textDescribe.classList.add(navDescribeClass);
 textDescribe.innerText = "Describe";
 describeWrap.append(textDescribe);
 
 const contactWrap = document.createElement('li');
 contactWrap.classList.add(navTextClass);
-const textContact = document.createElement('a');
+export const textContact = document.createElement('a');
 textContact.classList.add(navContactClass);
 textContact.innerText = "Contacts";
 contactWrap.append(textContact);
