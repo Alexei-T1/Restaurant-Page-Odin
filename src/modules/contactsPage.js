@@ -90,22 +90,4 @@ textWish.textContent = "We look forward to hearing from you and welcoming you to
 sectionWish.append(textWish);
 
 
-const text = document.createElement('div');
-text.innerText = `Contact Information:
-
-Address: Wonderland Avenue, Land of Fools
-
-Phone: +1 234-567-8910
-
-Email: info@alicethefoxandbasiliothecat.com
-
-Social Media: @AlicetheFoxandBasiliotheCatRestaurant
-
-Hours of Operation: 
-Monday - Thursday: 10:00am - 9:00pm
-Friday - Saturday: 10:00am - 11:00pm
-Sunday: 12:00pm - 8:00pm
-
-We look forward to hearing from you and welcoming you to our whimsical restaurant in the Land of Fools!`;
-
 contactsMain.append(sectionContact, sectionTimeWork, sectionWish);
